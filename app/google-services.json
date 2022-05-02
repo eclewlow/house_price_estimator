@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "132831554201",
+    "project_id": "iot-project-9faf5",
+    "storage_bucket": "iot-project-9faf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132831554201:android:05eefcd16e8c9d661b2608",
+        "android_client_info": {
+          "package_name": "sjsu.cmpe277.android.mapactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132831554201-eq47sa48voodd76k86s2tpdagq7ujuje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVptcgOH18I25MZDK9lDPpuxu1NLzBdXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132831554201-eq47sa48voodd76k86s2tpdagq7ujuje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

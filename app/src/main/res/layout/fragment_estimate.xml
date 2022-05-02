@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:paddingBottom="64dp">
+
+            <Button
+                android:id="@+id/estimate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/roundcorner_green"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/est_text_10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bathroom_edit" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="316dp"
+                android:layout_height="257dp"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="-50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/estimate_ellipse" />
+
+            <EditText
+                android:id="@+id/latitude_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                tools:text="@string/est_text_1" />
+
+            <EditText
+                android:id="@+id/longitude_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:text="@string/est_text_2" />
+
+            <EditText
+                android:id="@+id/city_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="116dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:text="@string/est_text_3" />
+
+            <EditText
+                android:id="@+id/home_size_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                tools:text="@string/est_text_4" />
+
+            <EditText
+                android:id="@+id/lot_size_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:text="@string/est_text_5" />
+
+            <EditText
+                android:id="@+id/house_price"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:drawableRight="@drawable/house"
+                android:drawablePadding="0dp"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:padding="16dp"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                tools:text="$ 1,000.00" />
+
+            <EditText
+                android:id="@+id/bedroom_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:text="@string/est_text_8"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                tools:text="@string/est_text_8" />
+
+            <EditText
+                android:id="@+id/bathroom_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/roundcorner_3"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:text="@string/est_text_9"
+                android:textColor="@color/signin_text_1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                tools:text="@string/est_text_9" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="156dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_1"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_2"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/latitude_edit" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_3"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/longitude_edit" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_4"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/static_map_image" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_5"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_size_edit" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_7"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lot_size_edit" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/est_text_11"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estimate_button" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/est_text_6"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/home_size_edit"
+                app:layout_constraintTop_toTopOf="@+id/home_size_edit" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/est_text_6"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/lot_size_edit"
+                app:layout_constraintTop_toTopOf="@+id/lot_size_edit" />
+
+            <TextView
+                android:id="@+id/bedroom_value"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/bedroom_edit"
+                app:layout_constraintEnd_toStartOf="@+id/bedroom_plus"
+                app:layout_constraintTop_toTopOf="@+id/bedroom_edit" />
+
+            <TextView
+                android:id="@+id/bathroom_value"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/signin_text_1"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/bathroom_edit"
+                app:layout_constraintEnd_toStartOf="@+id/bedroom_plus"
+                app:layout_constraintTop_toTopOf="@+id/bathroom_edit" />
+
+            <ImageView
+                android:id="@+id/static_map_image"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_edit"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="63dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="@+id/static_map_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/static_map_image" />
+
+            <Button
+                android:id="@+id/bedroom_plus"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/grey_plus"
+                android:text="+"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bedroom_edit"
+                app:layout_constraintEnd_toEndOf="@+id/bedroom_edit"
+                app:layout_constraintTop_toTopOf="@+id/bedroom_edit" />
+
+            <Button
+                android:id="@+id/bathroom_plus"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/grey_plus"
+                android:text="+"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bathroom_edit"
+                app:layout_constraintEnd_toEndOf="@+id/bathroom_edit"
+                app:layout_constraintTop_toTopOf="@+id/bathroom_edit" />
+
+            <Button
+                android:id="@+id/bathroom_minus"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="@color/grey_plus"
+                android:text="-"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bathroom_edit"
+                app:layout_constraintEnd_toStartOf="@+id/bathroom_value"
+                app:layout_constraintTop_toTopOf="@+id/bathroom_edit" />
+
+            <Button
+                android:id="@+id/bedroom_minus"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="@color/grey_plus"
+                android:text="-"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bedroom_edit"
+                app:layout_constraintEnd_toStartOf="@+id/bedroom_value"
+                app:layout_constraintTop_toTopOf="@+id/bedroom_edit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
